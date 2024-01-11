@@ -1,0 +1,226 @@
+body{
+    padding: 10px;
+    margin: 0;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    margin: 10px;
+}
+.arvore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 80px;
+    z-index: 5;
+    position: relative;
+}
+.tronco{
+    height: 100px;
+    width: 80px;
+    background-color: burlywood;
+    background: linear-gradient(180deg, rgb(132, 75, 0) 1%, burlywood);
+    border: solid 1px rgb(132, 75, 0);
+    z-index: 0;
+    margin-top: -100px;
+}
+.galho{
+    height: 80px;
+    border: solid 1px rgb(0, 67, 0);
+    background: linear-gradient(135deg, green 5%, rgb(0, 255, 38));
+}
+.g{
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg);
+    border-radius: 0 0 100% 0;
+    z-index: 2;
+    margin-top: -150px;
+}
+.m{
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    border-radius: 0 0 100% 0;
+    z-index: 3;
+    margin-top: -55px;
+}
+.p{
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    border-radius: 0 0 100% 0;
+    z-index: 4;
+    margin-top: -15px;
+}
+.led{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+}
+.vermelho{
+    background-color: red;
+    border: solid 1px red;
+    box-shadow: 0px 0px 10px 1px red;
+    animation: vermelho 1s infinite alternate;
+}
+.amarelo{
+    background-color: yellow;
+    border: solid 1px yellow;
+    box-shadow: 0 0 10px 1px yellow;
+    animation: amarelo 1s infinite alternate;
+}
+.azul{
+    background-color: blue;
+    border: solid 1px blue;
+    box-shadow: 0 0 10px 1px blue;
+    animation: azul 1s infinite alternate;
+}
+.verde{
+    background-color: rgb(4, 255, 4);
+    border: solid 1px rgb(4, 255, 4);
+    box-shadow: 0 0 10px 1px rgb(4, 255, 4);
+    animation: verde 1s infinite alternate;
+}
+
+@keyframes vermelho {
+    0% { box-shadow: 0 0 10px 1px red; 
+    border: solid 1px red; }
+	50% { box-shadow: 0 0 0 0; 
+    background-color: hsla(0, 100%, 50%, 0.503); }
+	100% { box-shadow: 0 0 10px 1px red; 
+    border: solid 1px red; }
+}
+
+@keyframes amarelo {
+    0% { box-shadow: 0 0 10px 1px yellow; 
+    border: solid 1px yellow; }
+	50% { box-shadow: 0 0 0 0; 
+    background-color: rgba(255, 255, 0, 0.503); }
+	100% { box-shadow: 0 0 10px 1px yellow; 
+    border: solid 1px yellow; }
+}
+
+@keyframes azul {
+    0% { box-shadow: 0 0 10px 1px blue; 
+    border: solid 1px blue; }
+	50% { box-shadow: 0 0 0 0; 
+    background-color: rgba(0, 0, 255, 0.508); }
+	100% { box-shadow: 0 0 10px 1px blue; 
+    border: solid 1px blue; }
+}
+
+@keyframes verde {
+    0% { box-shadow: 0 0 10px 1px rgb(4, 255, 4); 
+    border: solid 1px rgb(4, 255, 4); }
+	50% { box-shadow: 0 0 0 0; 
+    background-color: rgba(4, 255, 4, 0.507); }
+	100% { box-shadow: 0 0 10px 1px rgb(4, 255, 4); 
+    border: solid 1px rgb(4, 255, 4); }
+}
+
+
+
+.l1{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.l2{
+    margin-top: 30px;
+    margin-left: 28px;
+}
+.l3{
+    margin-top: 55px;
+    margin-left: 20px;
+}
+.l4{
+    margin-top: 77px;
+    margin-left: 5px;
+}
+.l5{
+    margin-top: 5px;
+    margin-left: 90px;
+}
+.l6{
+    margin-top: 30px;
+    margin-left: 90px;
+}
+.l7{
+    margin-top: 60px;
+    margin-left: 85px;
+}
+.l8{
+    margin-top: 90px;
+    margin-left: 75px;
+}
+.l9{
+    margin-top: 118px;
+    margin-left: 65px;
+}
+.l10{
+    margin-top: 145px;
+    margin-left: 45px;
+}
+.l11{
+    margin-top: 165px;
+    margin-left: 25px;
+}
+.l12{
+    margin-top: 180px;
+    margin-left: 5px;
+}
+.l13{
+    margin-top: 5px;
+    margin-left: 180px;
+}
+.l14{
+    margin-top: 30px;
+    margin-left: 180px;
+}
+.l15{
+    margin-top: 60px;
+    margin-left: 177px;
+}
+.l16{
+    margin-top: 90px;
+    margin-left: 170px;
+}
+.l17{
+    margin-top: 120px;
+    margin-left: 160px;
+}
+.l18{
+    margin-top: 150px;
+    margin-left: 145px;
+}
+.l19{
+    margin-top: 180px;
+    margin-left: 125px;
+}
+.l20{
+    margin-top: 205px;
+    margin-left: 103px;
+}
+.l21{
+    margin-top: 230px;
+    margin-left: 80px;
+}
+.l22{
+    margin-top: 251px;
+    margin-left: 58px;
+}
+.l23{
+    margin-top: 270px;
+    margin-left: 30px;
+}
+.l24{
+    margin-top: 285px;
+    margin-left: 5px;
+}
+
