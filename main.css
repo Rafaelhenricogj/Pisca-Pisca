@@ -28,11 +28,15 @@ img{
     border: solid 1px rgb(132, 75, 0);
     z-index: 0;
     margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .galho{
     height: 80px;
     border: solid 1px rgb(0, 67, 0);
-    background: linear-gradient(135deg, green 5%, rgb(0, 255, 38));
+    background: linear-gradient(135deg, rgb(0, 79, 0) 5%, rgb(0, 255, 38));
 }
 .g{
     width: 300px;
@@ -67,64 +71,61 @@ img{
 .vermelho{
     background-color: red;
     border: solid 1px red;
-    box-shadow: 0px 0px 10px 1px red;
-    animation: vermelho 1s infinite alternate;
+    box-shadow: 0 0 10px 1px red;
+    animation: vermelho .5s infinite alternate;
 }
 .amarelo{
     background-color: yellow;
     border: solid 1px yellow;
     box-shadow: 0 0 10px 1px yellow;
-    animation: amarelo 1s infinite alternate;
+    animation: amarelo .5s infinite alternate;
+    animation-delay: .5s;
 }
 .azul{
     background-color: blue;
     border: solid 1px blue;
-    box-shadow: 0 0 10px 1px blue;
-    animation: azul 1s infinite alternate;
+    box-shadow: 0 0 10px .5px blue;
+    animation: azul .5s infinite alternate;
 }
 .verde{
     background-color: rgb(4, 255, 4);
     border: solid 1px rgb(4, 255, 4);
     box-shadow: 0 0 10px 1px rgb(4, 255, 4);
-    animation: verde 1s infinite alternate;
+    animation: verde .5s infinite alternate;
+    animation-delay: .5s;
 }
 
 @keyframes vermelho {
-    0% { box-shadow: 0 0 10px 1px red; 
-    border: solid 1px red; }
-	50% { box-shadow: 0 0 0 0; 
-    background-color: hsla(0, 100%, 50%, 0.503); }
-	100% { box-shadow: 0 0 10px 1px red; 
+	0% { box-shadow: 0 0 0 0; 
+    background-color: hsla(0, 100%, 50%, 0.303); }
+	100% { box-shadow: 0 0 10px 1px red,
+        0 0 10px 1px red; 
     border: solid 1px red; }
 }
 
 @keyframes amarelo {
-    0% { box-shadow: 0 0 10px 1px yellow; 
-    border: solid 1px yellow; }
-	50% { box-shadow: 0 0 0 0; 
-    background-color: rgba(255, 255, 0, 0.503); }
-	100% { box-shadow: 0 0 10px 1px yellow; 
+	0% { box-shadow: 0 0 0 0; 
+    background-color: rgba(255, 255, 0, 0.282); }
+	100% { box-shadow: 0 0 10px 1px yellow,
+        0 0 10px 1px yellow; 
     border: solid 1px yellow; }
 }
 
 @keyframes azul {
-    0% { box-shadow: 0 0 10px 1px blue; 
-    border: solid 1px blue; }
-	50% { box-shadow: 0 0 0 0; 
-    background-color: rgba(0, 0, 255, 0.508); }
-	100% { box-shadow: 0 0 10px 1px blue; 
+	0% { box-shadow: 0 0 0 0; 
+    background-color: rgba(0, 0, 255, 0.296); }
+	100% { box-shadow: 0 0 10px 1px blue,
+        0 0 10px 1px blue; 
     border: solid 1px blue; }
 }
 
 @keyframes verde {
-    0% { box-shadow: 0 0 10px 1px rgb(4, 255, 4); 
-    border: solid 1px rgb(4, 255, 4); }
-	50% { box-shadow: 0 0 0 0; 
-    background-color: rgba(4, 255, 4, 0.507); }
-	100% { box-shadow: 0 0 10px 1px rgb(4, 255, 4); 
+	0% { box-shadow: 0 0 0 0; 
+    background-color: rgba(4, 255, 4, 0.329); }
+	100% { box-shadow: 0 0 10px 1px rgb(4, 255, 4),
+        0 0 10px 1px rgb(4, 255, 4); 
     border: solid 1px rgb(4, 255, 4); }
 }
-
 
 
 .l1{
@@ -224,3 +225,194 @@ img{
     margin-left: 5px;
 }
 
+
+.presente1{
+    position: relative;
+    margin-top: -60px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    position: relative;
+    background-color: yellow;
+    height: 60px;
+    width: 60px;
+    border-radius: 2px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.fitabox1{
+    position: relative;
+    background-color: red;
+    border: solid 1px black;
+    height: 100%;
+    width: 15px;
+    z-index: 20;
+}
+.tampa1{
+    position: relative;
+    height: 20px;
+    width: 65px;
+    background-color: yellow;
+    border: solid 1px black;
+    z-index: 21;
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fitatampa1{
+    background-color: red;
+    width: 15px;
+    height: 100%;
+    border: solid 1px black;
+}
+.laco1{
+    position: relative;
+    z-index: 21;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.no1{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border: solid 1px black;
+    border-radius: 120px 120px 120px;
+    transform: rotate(45deg);
+    z-index: 30;
+    margin-bottom: -5px;
+}
+.left1, .right1{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border: solid 1px black;
+    border-radius: 120px 120px 10px;
+    z-index: 29;
+}
+.left1{
+    transform: rotate(-35deg);
+}
+.right1{
+    transform: rotate(125deg);
+}
+
+.presente2{
+    position: relative;
+    margin-top: -60px;
+    margin-left: -120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(52, 250, 171);
+    border: solid 1px black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:-10;
+}
+.fitabox2{
+    position: relative;
+    background-color: rgb(253, 83, 111);
+    border: solid 1px black;
+    height: 100%;
+    width: 10px;
+    z-index: 20;
+}
+.tampa2{
+    position: relative;
+    height: 15px;
+    width: 55px;
+    background-color: rgb(52, 250, 171);
+    border: solid 1px black;
+    z-index: -1;
+    margin-bottom: -16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fitatampa2{
+    background-color: rgb(253, 83, 111);
+    width: 10px;
+    height: 100%;
+    border: solid 1px black;
+}
+
+.laco2{
+    position: relative;
+    z-index: 21;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -9px;
+    z-index: -1;
+}
+.no2{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(253, 83, 111);
+    border: solid 1px black;
+    border-radius: 120px 120px 120px;
+    transform: rotate(45deg);
+    z-index: 30;
+    margin-bottom: -5px;
+}
+.left2, .right2{
+    height: 15px;
+    width: 15px;
+    background-color: rgb(253, 83, 111);
+    border: solid 1px black;
+    border-radius: 120px 120px 10px;
+    z-index: -6;
+}
+.left2{
+    transform: rotate(-35deg);
+}
+.right2{
+    transform: rotate(125deg);
+}
+
+.botao{
+    background-color: rgb(125, 125, 125);
+    height: 40px;
+    width: 30px;
+    border: solid 1px black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 15px;
+    width: 15px;
+    background-color: rgb(205, 205, 205);
+    border: solid 1px black;
+    border-radius: 120px;
+    box-shadow: 0 2px 0 1px black;
+    margin-top: -2px;
+    transition: all .1s;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    transform: translate(0px, 2px);
+    box-shadow: 0 0 0 0, inset 0 2px 5px 1px black;
+}
